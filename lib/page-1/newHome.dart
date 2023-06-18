@@ -956,7 +956,7 @@ class _NewHomeState extends State<NewHome> {
                                                                       SafeGoogleFont(
                                                                     'Inter',
                                                                     fontSize:
-                                                                        15 *
+                                                                        12 *
                                                                             ffem,
                                                                     fontWeight:
                                                                         FontWeight
@@ -1191,137 +1191,51 @@ class _NewHomeState extends State<NewHome> {
                                         ),
                                       ),
                                       Container(
-                                          width: double.infinity,
-                                          height: 280 * fem,
-                                          child: ListView.builder(
-                                            scrollDirection: Axis.horizontal,
-                                              itemBuilder: (context, index) {
+                                        width: double.infinity,
+                                        height: 280 * fem,
+                                        child: ListView.builder(
+                                          scrollDirection: Axis.horizontal,
+                                          itemBuilder: (context, index) {
                                             return Container(
                                               child: Row(
-                                          // Make this listview horizontel and change containers details
-                                          // Use API 2 and add name,category,duration and locked by id
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
-                                          children: [
-                                            Container(
-                                              margin: EdgeInsets.fromLTRB(
-                                                  0 * fem,
-                                                  0 * fem,
-                                                  16 * fem,
-                                                  0 * fem),
-                                              padding: EdgeInsets.fromLTRB(
-                                                  0 * fem,
-                                                  0 * fem,
-                                                  0 * fem,
-                                                  13.67 * fem),
-                                              width: 242 * fem,
-                                              height: double.infinity,
-                                              decoration: BoxDecoration(
-                                                border: Border.all(
-                                                    color: Color(0xffebedf0)),
-                                                color: Color(0xffffffff),
-                                                borderRadius:
-                                                    BorderRadius.circular(
-                                                        8 * fem),
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color: Color(0x140e443e),
-                                                    offset: Offset(
-                                                        0 * fem, 0 * fem),
-                                                    blurRadius: 6 * fem,
-                                                  ),
-                                                ],
-                                              ),
-                                              child: Column(
+                                                // Make this listview horizontel and change containers details
+                                                // Use API 2 and add name,category,duration and locked by id
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
                                                     margin: EdgeInsets.fromLTRB(
                                                         0 * fem,
                                                         0 * fem,
-                                                        0 * fem,
-                                                        16 * fem),
-                                                    width: 242 * fem,
-                                                    height: 140 * fem,
-                                                    child: ClipRRect(
-                                                      borderRadius:
-                                                          BorderRadius.only(
-                                                        topLeft:
-                                                            Radius.circular(
-                                                                8 * fem),
-                                                        topRight:
-                                                            Radius.circular(
-                                                                8 * fem),
-                                                      ),
-                                                      child: Image.asset(
-                                                        'assets/page-1/images/young-woman-doing-natarajasana-exercise-3.png',
-                                                        fit: BoxFit.cover,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  Container(
-                                                    margin: EdgeInsets.fromLTRB(
-                                                        12 * fem,
-                                                        0 * fem,
-                                                        0 * fem,
-                                                        8 * fem),
-                                                    child: Text(
-                                                      listResponse2![
-                                                                        index]
-                                                                    ["category"]
-                                                                .toString(),
-                                                      style: SafeGoogleFont(
-                                                        'Inter',
-                                                        fontSize: 16 * ffem,
-                                                        fontWeight:
-                                                            FontWeight.w700,
-                                                        height: 1.3333333333 *
-                                                            ffem /
-                                                            fem,
-                                                        letterSpacing:
-                                                            -0.24 * fem,
-                                                        color:
-                                                            Color(0xff598bed),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  Container(
-                                                    margin: EdgeInsets.fromLTRB(
-                                                        12 * fem,
-                                                        0 * fem,
-                                                        0 * fem,
-                                                        15 * fem),
-                                                    constraints: BoxConstraints(
-                                                      maxWidth: 191 * fem,
-                                                    ),
-                                                    child: Text(
-                                                      listResponse2![
-                                                                        index]
-                                                                    ["name"]
-                                                                .toString(),
-                                                      style: SafeGoogleFont(
-                                                        'Inter',
-                                                        fontSize: 20 * ffem,
-                                                        fontWeight:
-                                                            FontWeight.w700,
-                                                        height:
-                                                            1.5 * ffem / fem,
-                                                        letterSpacing:
-                                                            -0.16 * fem,
-                                                        color:
-                                                            Color(0xff000000),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  Container(
-                                                    margin: EdgeInsets.fromLTRB(
-                                                        12 * fem,
-                                                        0 * fem,
-                                                        14.5 * fem,
+                                                        16 * fem,
                                                         0 * fem),
-                                                    width: double.infinity,
-                                                    child: Row(
+                                                    padding:
+                                                        EdgeInsets.fromLTRB(
+                                                            0 * fem,
+                                                            0 * fem,
+                                                            0 * fem,
+                                                            13.67 * fem),
+                                                    width: 242 * fem,
+                                                    height: double.infinity,
+                                                    decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          color: Color(
+                                                              0xffebedf0)),
+                                                      color: Color(0xffffffff),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8 * fem),
+                                                      boxShadow: [
+                                                        BoxShadow(
+                                                          color:
+                                                              Color(0x140e443e),
+                                                          offset: Offset(
+                                                              0 * fem, 0 * fem),
+                                                          blurRadius: 6 * fem,
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    child: Column(
                                                       crossAxisAlignment:
                                                           CrossAxisAlignment
                                                               .start,
@@ -1331,45 +1245,159 @@ class _NewHomeState extends State<NewHome> {
                                                               .fromLTRB(
                                                                   0 * fem,
                                                                   0 * fem,
-                                                                  168.5 * fem,
-                                                                  0 * fem),
-                                                          child: Text(
-                                                            '${listResponse2![
-                                                                        index]
-                                                                    ["duration"]
-                                                                .toString()} min',
-                                                            style:
-                                                                SafeGoogleFont(
-                                                              'Inter',
-                                                              fontSize:
-                                                                  13 * ffem,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                              height:
-                                                                  1.3333333333 *
-                                                                      ffem /
-                                                                      fem,
-                                                              letterSpacing:
-                                                                  -0.12 * fem,
-                                                              color: Color(
-                                                                  0xff6c747a),
+                                                                  0 * fem,
+                                                                  16 * fem),
+                                                          width: 242 * fem,
+                                                          height: 140 * fem,
+                                                          child: ClipRRect(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .only(
+                                                              topLeft: Radius
+                                                                  .circular(
+                                                                      8 * fem),
+                                                              topRight: Radius
+                                                                  .circular(
+                                                                      8 * fem),
+                                                            ),
+                                                            child: Image.asset(
+                                                              'assets/page-1/images/young-woman-doing-natarajasana-exercise-3.png',
+                                                              fit: BoxFit.cover,
                                                             ),
                                                           ),
                                                         ),
                                                         Container(
                                                           margin: EdgeInsets
                                                               .fromLTRB(
+                                                                  12 * fem,
                                                                   0 * fem,
-                                                                  6.67 * fem,
                                                                   0 * fem,
+                                                                  8 * fem),
+                                                          child: Text(
+                                                            listResponse2![
+                                                                        index]
+                                                                    ["category"]
+                                                                .toString(),
+                                                            style:
+                                                                SafeGoogleFont(
+                                                              'Inter',
+                                                              fontSize:
+                                                                  16 * ffem,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w700,
+                                                              height:
+                                                                  1.3333333333 *
+                                                                      ffem /
+                                                                      fem,
+                                                              letterSpacing:
+                                                                  -0.24 * fem,
+                                                              color: Color(
+                                                                  0xff598bed),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Container(
+                                                          margin: EdgeInsets
+                                                              .fromLTRB(
+                                                                  12 * fem,
+                                                                  0 * fem,
+                                                                  0 * fem,
+                                                                  15 * fem),
+                                                          constraints:
+                                                              BoxConstraints(
+                                                            maxWidth: 191 * fem,
+                                                          ),
+                                                          child: Text(
+                                                            listResponse2![
+                                                                        index]
+                                                                    ["name"]
+                                                                .toString(),
+                                                            style:
+                                                                SafeGoogleFont(
+                                                              'Inter',
+                                                              fontSize:
+                                                                  18 * ffem,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w700,
+                                                              height: 1.5 *
+                                                                  ffem /
+                                                                  fem,
+                                                              letterSpacing:
+                                                                  -0.16 * fem,
+                                                              color: Color(
+                                                                  0xff000000),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Container(
+                                                          margin: EdgeInsets
+                                                              .fromLTRB(
+                                                                  12 * fem,
+                                                                  0 * fem,
+                                                                  14.5 * fem,
                                                                   0 * fem),
-                                                          width: 15 * fem,
-                                                          height: 16.67 * fem,
-                                                          child: Image.asset(
-                                                            'assets/page-1/images/lock.png',
-                                                            width: 15 * fem,
-                                                            height: 16.67 * fem,
+                                                          width:
+                                                              double.infinity,
+                                                          child: Row(
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                            children: [
+                                                              Container(
+                                                                margin: EdgeInsets
+                                                                    .fromLTRB(
+                                                                        0 * fem,
+                                                                        0 * fem,
+                                                                        168.5 *
+                                                                            fem,
+                                                                        0 * fem),
+                                                                child: Text(
+                                                                  '${listResponse2![index]["duration"].toString()} min',
+                                                                  style:
+                                                                      SafeGoogleFont(
+                                                                    'Inter',
+                                                                    fontSize:
+                                                                        10.80 *
+                                                                            ffem,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                    height:
+                                                                        1.3333333333 *
+                                                                            ffem /
+                                                                            fem,
+                                                                    letterSpacing:
+                                                                        -0.12 *
+                                                                            fem,
+                                                                    color: Color(
+                                                                        0xff6c747a),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Container(
+                                                                margin: EdgeInsets
+                                                                    .fromLTRB(
+                                                                        0 * fem,
+                                                                        6.67 *
+                                                                            fem,
+                                                                        0 * fem,
+                                                                        0 * fem),
+                                                                width: 15 * fem,
+                                                                height:
+                                                                    16.67 * fem,
+                                                                child:
+                                                                    Image.asset(
+                                                                  'assets/page-1/images/lock.png',
+                                                                  width:
+                                                                      15 * fem,
+                                                                  height:
+                                                                      16.67 *
+                                                                          fem,
+                                                                ),
+                                                              ),
+                                                            ],
                                                           ),
                                                         ),
                                                       ],
@@ -1377,14 +1405,13 @@ class _NewHomeState extends State<NewHome> {
                                                   ),
                                                 ],
                                               ),
-                                            ),
-                                            
-                                          ],
-                                        ),
                                             );
                                           },
-                                          itemCount: listResponse2==null ? 0 :listResponse2!.length,
-                                          ),),
+                                          itemCount: listResponse2 == null
+                                              ? 0
+                                              : listResponse2!.length,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
